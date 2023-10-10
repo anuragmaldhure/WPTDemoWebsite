@@ -1,0 +1,31 @@
+.LogoTopBar {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.TopBar {
+    height: 80px;
+    width: 900px;
+    background-color: antiquewhite;
+}
+
+.Menu {
+    text-align: center;
+    background-color: lightcyan;
+    height: 20px;
+    width: 1430px;
+}
+
+.Title {
+    width: 1430px;
+    background-color: lightgray;
+}
+
+.Foot{
+    height: 100px;
+    width: 1430px;
+    text-align: center;
+    background-color: beige;
+}

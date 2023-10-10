@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<header>
+    <!-- Internal css -->
+    <style>
+        .LogoTopBar {
+            height: 80px;
+            width: 80px;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+
+        .TopBar {
+            height: 80px;
+            width: 900px;
+            background-color: antiquewhite;
+        }
+
+        .Menu {
+            text-align: center;
+            background-color: lightcyan;
+            height: 20px;
+            width: 1430px;
+        }
+
+        .Title {
+            width: 1430px;
+            background-color: lightgray;
+        }
+    </style>
+
+    <table style="height: 80px; width: 1430px;" border="0">
+        <tr>
+            <td class="LogoTopBar"><img src="Images/HomePage/g copy.jpeg" height="50px" width="50px" /></td>
+
+            <td class="TopBar">
+                <h1>
+                    <!-- Inline css -->
+                    <span style="color:blue; ">G</span><span style="color:red;">o</span><span
+                        style="color:orange;">o</span><span style="color:blue;">g</span><span
+                        style="color:green;">l</span><span style="color:red;">e</span> for <span
+                        style="color:purple;">भारत</span>
+                </h1>
+            </td>
+        </tr>
+    </table>
+    <table class="Menu" border="0">
+        <tr>
+            <td>
+                <a href=Google_Home.html> Google Pune Home Page
+            </td>
+            <td>
+                <a href=Product.html> Products</a>
+            </td>
+            <td>
+                <a href=Commitment.html> Products</a>
+            </td>
+            <td>
+                <a href="Indiablog.html"> Commitment</a>
+            </td>
+            <td>
+                <a href=Meet_my_Developer.html> Meet my Developer</a>
+            </td>
+        </tr>
+    </table>
+</header>
+
+<head>
+    <table class="Title">
+        <tr>
+            <td colspan="4">
+                <h2 style="text-align: center;"> Google One Account Registration </h2>
+            </td>
+        </tr>
+    </table>
+</head>
+
+<body>
+    <br />
+    <form action="code.jsp" method="post">
+        <table style="height: 400px; width: 500px; border-style:inset;" align="center" border="0">
+            <tr style="text-align: center;">
+                <td>Username</td>
+                <td><input type="text" 
+                    required placeholder="Ex: Anurag Maldhure" 
+                    name="name" 
+                    id="name">
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Password</td>
+                <td><input type="password"
+                    required placeholder="Ex: aHoGq@35&2^" 
+                    name="password" 
+                    id="password">
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Email</td>
+                <td><input type="email"
+                    required placeholder="Ex: abc@gmail.com" 
+                    name="email" 
+                    id="email"></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Age</td>
+                <td><input type="number" 
+                    min="18" 
+                    max="100"
+                    required placeholder="18+"
+                    name="age" 
+                    id="age"></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Date of birth </td>
+                <td><input type="date"
+                    name="date" 
+                    id="date">
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Gender </td>
+                <td>
+                    <input type="radio" value="F" name="gender" id="radF" /> Female
+                    <input type="radio" value="M" name="gender" id="radM" />Male
+                    <input type="radio" value="O" name="gender" id="radO" />Other
+                  </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Country </td>
+                <td>
+                    <select name="country" id="country">
+                      <option value="1">India</option>
+                      <option value="2">USA</option>
+                      <option value="3">China</option>
+                      <option value="4">Japan</option>
+                      <option value="5">European Union</option>
+                      <option value="6">UK</option>
+                      <option value="7">Australia</option>
+                      <option value="8">Singapore</option>
+                    </select>
+                  </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Hobbies</td>
+                <td>
+                  <select name="hobby" id="hobby" multiple >
+                    <option value="11">Cooking</option>
+                    <option value="22">Reading</option>
+                    <option value="33">Sports</option>
+                    <option value="33">Music</option>
+                    <option value="33">E-Sports</option>
+                    <option value="33">Travelling</option>
+                  </select>
+                </td>
+              </tr>
+                <tr style="text-align: center;">
+                    <td colspan="2">
+                    <input type="checkbox" name="agreement" id="agreement" required/>
+                    I Agree that above information is true  
+                    </td>
+                  </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2"><input type="submit" value="Regsiter now"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2">Sign in to an existing account<a href="Signin.html"> Sign
+                        in</a></td>
+            </tr>
+        </table>
+    </form>
+    <br />
+</body>
+
+
+
+<footer>
+    <table style="height: 100px; width: 1430px; text-align: center; background-color: beige" border="0">
+        <tr>
+            <td
+                style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Developed by our upcoming Noogler <a href=Meet_my_Developer.html> Anurag Maldhure</a>
+            </td>
+            <td
+                style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Follow us on : </td>
+
+            <td><a href="https://www.facebook.com/Google/"> <img src="Images/HomePage/facebook.jpeg" height="40px"
+                        width="40px" /></a></td>
+
+            <td><a href="https://www.instagram.com/google/"> <img src="Images/HomePage/instagram.jpeg" height="40px"
+                        width="40px" /></a></td>
+
+            <td><a href="https://in.linkedin.com/company/google"> <img src="Images/HomePage/linkedin.png" height="40px"
+                        width="40px" /></a></td>
+        </tr>
+    </table>
+
+</footer>

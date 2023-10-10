@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Games</title>
+    <link rel="stylesheet" href="css/Pageformat.css" />
+
+    <table style="height: 80px; width: 1430px;" border="0">
+        <tr>
+            <td class="LogoTopBar"><img src="Images/HomePage/g copy.jpeg" height="50px" width="50px" /></td>
+            <td class="TopBar">
+                <h1>
+                    <span style="color:blue; ">G</span><span style="color:red;">o</span><span
+                        style="color:orange;">o</span><span style="color:blue;">g</span><span
+                        style="color:green;">l</span><span style="color:red;">e</span> for <span
+                        style="color:purple;">भारत</span>
+                </h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="Title" colspan="4">
+                <h2 style="text-align: center;"> Play mini Games </h2>
+            </td>
+        </tr>
+    </table>
+</head>
+
+
+<body>
+    <table class="Menu" border="0">
+        <tr>
+            <td>
+                <a href=Google_Home.html> Google Pune Home Page
+            </td>
+            <td>
+                <a href=Product.html> Products</a>
+            </td>
+            <td>
+                <a href=Commitment.html> Commitment</a>
+            </td>
+            <td>
+                <a href=Meet_my_Developer.html> Meet my Developer</a>
+            </td>
+            <td>
+                <a href=Games.html> Play games</a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- GAME 1 -->
+
+    <div style="background-color: lightsalmon; text-align: center;">
+        <h2>Treasure hunt</h2>
+    </div>
+    <div style="text-align: center;">
+        <input type="button" value="Start Game" id="StartButton" onclick="StartGame()" />
+    </div>
+    <table style="text-align: center; height: 700px; width: 700px;" align="center" border="0" id="table">
+        <tr style="height: 50px;width: 100px;">
+            <td> Result</td>
+            <td> Lives remaining</td>
+            <td> Time elapsed</td>
+        </tr>
+        <tr style="height: 50px;width: 100px;">
+            <td id="result" style="text-align: center; background-color: yellow;">
+            </td>
+
+            <td id="lives" style="text-align: center;background-color: yellow;">
+            </td>
+
+            <td id="time" style="text-align: center;background-color: yellow;">
+            </td>
+        </tr>
+
+        <tr style="height: 200px; width: 100px;">
+            <td style="background-color: aquamarine; height: 200px; width: 200px;" id="1" onmouseover=TempSelect(id)
+                onmouseout=TempUnSelect(id) onclick=Select(id)>1
+
+            </td>
+            <td style="background-color: aquamarine; height: 200px; width: 200px;" id="2" onmouseover=TempSelect(id)
+                onmouseout=TempUnSelect(id) onclick=Select(id)>2
+            </td>
+            <td style="background-color: aquamarine; height: 200px; width: 200px;" id="3" onmouseover=TempSelect(id)
+                onmouseout=TempUnSelect(id) onclick=Select(id)>3
+            </td>
+        </tr>
+        <tr style="height: 200px; width: 100px;">
+            <td style="background-color: aquamarine; height: 200px; width: 200px;" id="4" onmouseover=TempSelect(id)
+                onmouseout=TempUnSelect(id) onclick=Select(id)>4
+            </td>
+            <td style="background-color: aquamarine; height: 200px; width: 200px;" id="5" onmouseover=TempSelect(id)
+                onmouseout=TempUnSelect(id) onclick=Select(id)>5
+            </td>
+            <td style="background-color: aquamarine; height: 200px; width: 200px;" id="6" onmouseover=TempSelect(id)
+                onmouseout=TempUnSelect(id) onclick=Select(id)>6
+            </td>
+        </tr>
+        <tr style="height: 200px; width: 100px;">
+            <td style="background-color: aquamarine; height: 200px; width: 200px;" id="7" onmouseover=TempSelect(id)
+                onmouseout=TempUnSelect(id) onclick=Select(id)>7
+            </td>
+            <td style="background-color: aquamarine; height: 200px; width: 200px;" id="8" onmouseover=TempSelect(id)
+                onmouseout=TempUnSelect(id) onclick=Select(id)>8
+            </td>
+            <td style="background-color: aquamarine; height: 200px; width: 200px;" id="9" onmouseover=TempSelect(id)
+                onmouseout=TempUnSelect(id) onclick=Select(id)>9
+            </td>
+        </tr>
+    </table>
+
+
+    <script src="TreasureHunt.js">
+
+    </script>
+
+    <!-- GAME 2 -->
+    <div style="background-color: lightsalmon; text-align: center;">
+        <h2>Drag me down</h2>
+    </div>
+    <div align="center" style="background-color: lightyellow;">
+        <br />
+        <input type="button" value="Mario Left" onmouseover="MarioMoveLeft()" />
+        <input type="button" value="Mario Right" onmouseover="MarioMoveRight()" />
+        <!-- <input type="button" value="Dino Left" onmouseover="DinoMoveLeft()" />
+        <input type="button" value="Dino Right" onmouseover="DinoMoveRight()" /> -->
+    </div>
+
+    <br />
+    <img id="myCar" style="height: 100px; width: 100px" src="Images/Games/mario car.jpeg" />
+    <!-- <div style="background-color: lightgray;" width="600px">
+        _______________________________________
+    </div> -->
+    <table style=" border-color: lightgray;">
+        <tr>
+            <td style="height: 20px; width:600px; background-color: lightgray;">
+            </td>
+            <td>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+            </td>
+            <td style="height: 20px; width:600px; background-color: white;">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+            </td>
+            <td style="height: 20px; width:600px; background-color: white;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td style="height: 20px; width:600px; background-color: white;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td style="height: 20px; width:600px; background-color: white;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td style="height: 20px; width:600px; background-color: lightgray;">
+            </td>
+        </tr>
+    </table>
+
+    <script src="DragMeDown.js">
+    </script>
+
+    <br />
+</body>
+
+
+<footer>
+    <table class="Foot" border="0">
+        <tr>
+            <td
+                style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Developed by our upcoming Noogler <a href=Meet_my_Developer.html> Anurag Maldhure</a>
+            </td>
+            <td
+                style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Follow us on : </td>
+
+            <td><a href="https://www.facebook.com/Google/"> <img src="Images/HomePage/facebook.jpeg" height="40px"
+                        width="40px" /></a></td>
+
+            <td><a href="https://www.instagram.com/google/"> <img src="Images/HomePage/instagram.jpeg" height="40px"
+                        width="40px" /></a></td>
+
+            <td><a href="https://in.linkedin.com/company/google"> <img src="Images/HomePage/linkedin.png" height="40px"
+                        width="40px" /></a></td>
+        </tr>
+    </table>
+</footer>
+
+</html>

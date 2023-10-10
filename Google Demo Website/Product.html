@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en-US">
+
+
+<head>
+  <title>Google Products</title>
+  <link rel="stylesheet" href="css/Pageformat.css" />
+
+  <table style="height: 80px; width: 1430px;" border="0">
+    <tr>
+      <td class="LogoTopBar"><img src="Images/HomePage/g copy.jpeg" height="50px" width="50px" /></td>
+      <td class="TopBar">
+        <h1>
+          <span style="color:blue; ">G</span><span style="color:red;">o</span><span style="color:orange;">o</span><span
+            style="color:blue;">g</span><span style="color:green;">l</span><span style="color:red;">e</span> for <span
+            style="color:purple;">भारत</span>
+        </h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="Title" colspan="4">
+        <h2 style="text-align: center;"> Products </h2>
+      </td>
+    </tr>
+  </table>
+</head>
+
+
+
+<body>
+  <table class="Menu" border="0">
+    <tr>
+      <td>
+        <a href=Google_Home.html> Google Pune Home Page</a>
+      </td>
+      <td>
+        <a href=Commitment.html> Commitment</a>
+      </td>
+      <td>
+        <a href=Indiablog.html> Inside Google India</a>
+      </td>
+      <td>
+        <a href=Meet_my_Developer.html> Meet my Developer</a>
+      </td>
+      <td>
+        <a href=Games.html> Play games</a>
+      </td>
+    </tr>
+  </table>
+
+
+  <table style="height: 20px; width: 1430px; background-color: lightgoldenrodyellow;" align="center" border="0">
+    <tr>
+      <td style="text-align: center;">
+        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Helpful products.
+          For everyone.</h1>
+
+        <h2>Make life easier with a little help from our products</h2>
+
+        <img src="Images/Products/unnamed.jpg" height="300px" width="750px" />
+
+        <h2>Discover easy-to-use tools that offer a flexible and secure foundation for
+          learning and collaborating</h2>
+        <h3>Learn more</h3>
+
+        <br />
+
+        <h2>Transform how people work together with Google Workspace</h2>
+        <h3></h3>Get more done with a single, connected experience</h3>
+        <h4>Learn more</h4>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table style="height: 300px; width: 700px; border-style:inset;" align="center" border="1">
+          <tr>
+            <td style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" colspan="2">
+              Calculate Google One account Workspace Subscription price</td>
+          </tr>
+          <tr style="text-align: center;">
+            <td>Number of months (max 5 years)
+            </td>
+            <td><input type="number" id="noofmonths" min="1" max="60" style="width: 50px;"></td>
+          </tr>
+          <tr style="text-align: center;">
+            <td>Number of Workspace Products (Max 9) @ 2000 INR/month each</td>
+            <td><input type="number" id="noofproducts" min="1" max="9" style="width: 50px;"></td>
+          <tr>
+            <td style="text-align: center;" colspan="2"><input type="submit" value="Calculate Total Amount Payable"
+                onclick="CalculateAmount()" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Total Amount to
+              Pay </td>
+            <td>
+              <div id="amountToPayDiv" style="background-color: yellow; text-align: center;">
+              </div>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">
+        <br />
+        <img src="Images/Products/unnamed (1).jpg" height="200px" width="250px" />
+        <h3>Get Product Support</h3>
+      </td>
+    </tr>
+  </table>
+  <script>
+    function CalculateAmount() {
+      var refToNoOfMonths = document.getElementById("noofmonths");
+      var refToNoOfProducts = document.getElementById("noofproducts");
+      var refToAmountToPayDiv = document.getElementById("amountToPayDiv");
+      refToAmountToPayDiv.innerText = refToNoOfMonths.value * refToNoOfProducts.value * 2000;
+    }
+  </script>
+</body>
+
+<footer>
+  <table class="Foot" border="0">
+    <tr>
+      <td style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        Developed by our upcoming Noogler <a href=Meet_my_Developer.html> Anurag Maldhure</a>
+      </td>
+      <td style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        Follow us on : </td>
+
+      <td><a href="https://www.facebook.com/Google/"> <img src="Images/HomePage/facebook.jpeg" height="40px"
+            width="40px" /></a></td>
+
+      <td><a href="https://www.instagram.com/google/"> <img src="Images/HomePage/instagram.jpeg" height="40px"
+            width="40px" /></a></td>
+
+      <td><a href="https://in.linkedin.com/company/google"> <img src="Images/HomePage/linkedin.png" height="40px"
+            width="40px" /></a></td>
+    </tr>
+  </table>
+</footer>
+
+</html>
