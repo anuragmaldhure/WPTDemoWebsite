@@ -54,6 +54,9 @@
         <a href=Indiablog.html> Inside Google India</a>
       </td>
       <td>
+        <a href=DevCon23.html> gDev_Con_'23</a>
+      </td>
+      <td>
         <a href=Meet_my_Developer.html> Meet my Developer</a>
       </td>
       <td>
@@ -117,31 +120,38 @@
       </td>
       
 
-      <!-- <td style="height: 700px; width: 430px; vertical-align: top;" id="AdContainer1"><img src="ImageSrc" height="700px"
-          width="430px" onclick="OpenAd(ImageSrc)" id="Ad1"/></td> -->
+      <td style="height: 700px; width: 430px; vertical-align: top;" >
+        <img src="Images/HomePage/3.jpeg" height="700px" width="430px" id="AdContainer1"/>
+      </td>
           
     </tr>
 
     <tr>
       <td style="height: 700px; width: 430px; vertical-align: top;" id="Ad2"><img src="Images/HomePage/2.jpeg" height="700px"
-          width="430px" onclick="OpenAd2()"/></td>
+          width="430px" onclick="ImageFlipContainer1()"/></td>
     </tr>
   </table>
 
   <script>
-    // function OpenAd(ImageSrc){
-    //   var queueImgArray = new Array();
-    //   queueImgArray.push("Images/HomePage/3.jpeg");
-    //   // var queueNo = window.setInterval(OpenAd, 2000);
-    //   // console.log(queueNo);
-    //   // queueImgArray.push("Images/HomePage/2.jpeg");
-
+    // function MoveAds() {
+    //     var queueImgArray = new Array();
+    //     queueImgArray.push("Images/HomePage/3.jpeg");
+    //     queueImgArray.push("Images/HomePage/2.jpeg");
+    //     var data = "abcd";
+    //     refToMyAdContainer.innerHTML =
+    //       '<img src="' + queueImgArray[1] + '" height="700px" width="430px" onclick="' + OpenAd2() + '" />';
     // }
-    function OpenAd1(){
+
+    function changeImage(){
       window.location.href = "https://www.oracle.com/dk/redbullracing/";
     }
-    function OpenAd2(){
+    function changeImageBack(){
       window.location.href = "https://www.nike.com/jordan";
+    }
+
+    function ImageFlipContainer1(){
+      refToAdContainer1 = document.getElementById("AdContainer1");
+      
     }
 
     

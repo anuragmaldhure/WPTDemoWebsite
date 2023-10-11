@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en-US">
+
+
+<head>
+  <title>Google Products</title>
+  <link rel="stylesheet" href="css/Pageformat.css" />
+
+  <table style="height: 80px; width: 1430px;" border="0">
+    <tr>
+      <td class="LogoTopBar"><img src="Images/HomePage/g copy.jpeg" height="50px" width="50px" /></td>
+      <td class="TopBar">
+        <h1>
+          <span style="color:blue; ">G</span><span style="color:red;">o</span><span style="color:orange;">o</span><span
+            style="color:blue;">g</span><span style="color:green;">l</span><span style="color:red;">e</span> for <span
+            style="color:purple;">भारत</span>
+        </h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="Title" colspan="4">
+        <h2 style="text-align: center;"> gDev Con '23 </h2>
+      </td>
+    </tr>
+  </table>
+</head>
+
+
+
+<body>
+  <table class="Menu" border="0">
+    <tr>
+      <td>
+        <a href=Google_Home.html> Google Pune Home Page</a>
+      </td>
+      <td>
+        <a href=Commitment.html> Commitment</a>
+      </td>
+      <td>
+        <a href=Indiablog.html> Inside Google India</a>
+      </td>
+      <td>
+        <a href=DevCon23.html> gDev_Con_'23</a>
+      </td>
+      <td>
+        <a href=Meet_my_Developer.html> Meet my Developer</a>
+      </td>
+      <td>
+        <a href=Games.html> Play games</a>
+      </td>
+    </tr>
+  </table>
+
+  <style>
+      body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .hero-image {
+    background-image: url("/Images/Devcon/conimg.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  </style>
+
+<div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px; color: black;" >gDev Con '23</h1>
+      <h3>Happening this Winter in Hinjawadi</h3>
+    </div>
+  </div>
+  <br/>
+
+  <div style="text-align: center;">
+    <center>
+        <table>
+          <tr>
+            <td>Name</td>
+            <td><input type="text" id="txtName" /></td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td><input type="text" id="txtAddress" /></td>
+          </tr>
+          <tr >
+            <td>City </td>
+            <td>
+                <select name="city" id="city">
+                  <option value="Pune">Pune</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Nagpur">Nagpur</option>
+                  <option value="Chennai">Chennai</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Kolkata">Kolkata</option>
+                  <option value="Hyderabad">Hyderabad</option>
+                  <option value="Bangalore">Bangalore</option>
+                </select>
+              </td>
+        </tr>
+        <tr>
+            <td>Date of Birth</td>
+            <td><input type="date" id="dob" /></td>
+          </tr>
+        <tr>
+            <td>Mobile Number</td>
+            <td><input type="number" id="phoneNumber" /></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="email" id="txtEMail" /></td>
+          </tr>
+        </table>
+        <br/>
+        <input type="button" value="Book your seat(s)" onclick="BookTicket()" />
+        <br /><br /><br />
+        <table style="width: 1000px" border="1" id="myTable">
+        <tr>
+            <td>Name</td>
+            <td>Address</td>     
+            <td>City</td>
+            <td>Date of Birth</td>
+            <td>Mobile no</td>
+            <td>Email</td>
+        </tr>
+        </table>
+        <br/><br/>
+        <input type="button" value="Proceed to Payment" />
+        <br/> <br/>
+      </center>
+
+    
+  </div>
+
+  <script>
+        function BookTicket() {
+        var refToMyTable = document.getElementById("myTable");
+        var refToTxtName = document.getElementById("txtName");
+        var refToTxtAddress = document.getElementById("txtAddress");
+        var refToTxtCity = document.getElementById("city");
+        var refToTxtDob = document.getElementById("dob");
+        var refToTxtNo = document.getElementById("phoneNumber");
+        var refToTxtEMail = document.getElementById("txtEMail");
+
+        refToMyTable.innerHTML =
+          refToMyTable.innerHTML +
+          `<tr>` +
+          `<td>` +
+          refToTxtName.value +
+          `</td>` +
+          `<td>` +
+          refToTxtAddress.value +
+          `</td>` +
+          `<td>` +
+          refToTxtCity.value +
+          `</td>` +
+          `<td>` +
+          refToTxtDob.value +
+          `</td>` +
+          `<td>` +
+          refToTxtNo.value +
+          `</td>` +
+          `<td>`+
+          refToTxtEMail.value +
+          `</td>` +
+          `</tr>`;
+      }
+
+  </script>
+
+</body>
+
+<footer>
+  <table class="Foot" border="0">
+    <tr>
+      <td style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        Developed by our upcoming Noogler <a href=Meet_my_Developer.html> Anurag Maldhure</a>
+      </td>
+      <td style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        Follow us on : </td>
+
+      <td><a href="https://www.facebook.com/Google/"> <img src="Images/HomePage/facebook.jpeg" height="40px"
+            width="40px" /></a></td>
+
+      <td><a href="https://www.instagram.com/google/"> <img src="Images/HomePage/instagram.jpeg" height="40px"
+            width="40px" /></a></td>
+
+      <td><a href="https://in.linkedin.com/company/google"> <img src="Images/HomePage/linkedin.png" height="40px"
+            width="40px" /></a></td>
+    </tr>
+  </table>
+</footer>
+
+</html>
